@@ -108,6 +108,7 @@ public class UserController {
         Ship ship = shipService.getOne(shipQueryWrapper);
         ship.setAdventDate(adventDate);//设置到达时间
         ship.setIsAdvent("是");
+        ship.setIsWork("否");
         shipService.updateById(ship);
         return Result.success();
     }

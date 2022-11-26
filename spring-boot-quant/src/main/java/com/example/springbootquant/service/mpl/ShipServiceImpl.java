@@ -32,7 +32,7 @@ public class ShipServiceImpl extends ServiceImpl<ShipMapper, Ship> implements Sh
         bearVO1.setValue(count(schedQueryWrapper1));
         bearVOList.add(bearVO1);
         QueryWrapper<Ship> shipQueryWrapper = new QueryWrapper<>();
-        shipQueryWrapper.eq("is_work", "是");
+        shipQueryWrapper.eq("is_work", "否");
         int count1 = count(shipQueryWrapper) - count(schedQueryWrapper);
         bearVO bearVO2 = new bearVO();
         bearVO2.setValue(count1);

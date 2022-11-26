@@ -158,6 +158,7 @@ export default {
         opacity: 0,
       },
       dialogTableVisible: false,
+      model: "image",
     };
   },
   created: function () {
